@@ -19,72 +19,73 @@ a {
   --Space: "Space Grotesk", serif;
 }
 /* ====common css ends ====== */
-/* =========navber css start here========= */
-#navber {
-  background-color: #fff;
-  padding: 15px 0;
-  position: fixed;
-  top: 36px;
+
+/* ====navber css starts ====== */
+nav {
+  position: absolute;
   left: 0;
+  top: 34px;
   width: 100%;
 }
-.nav_wrapper {
-  display: flex;
+nav .sidebyside {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
 }
-.nav_logo {
-  width: 20%;
+.nav-item {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 60px;
 }
-.nav_menu .nav_menu_item {
-  display: flex;
-  column-gap: 46px;
+nav ul {
+  display: contents;
+  color: #fff;
+  font-family: var(--inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
 }
-.nav_menu .nav_menu_item li a {
-  color: var(--primeryColor);
-  font-family: var(--primeryFont);
-  font-size: 15px;
-  font-weight: 500;
-  line-height: normal;
+nav ul li {
   position: relative;
-  transition: all linear 0.4s;
 }
-.nav_menu .nav_menu_item li a::after {
-  content: "";
+nav ul li::after {
   position: absolute;
   width: 0;
-  height: 5px;
-  background-color: rgb(96, 4, 4);
-  right: 0;
-  bottom: -5px;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  content: "";
+  background-color: rgba(229, 229, 229, 0.555);
   transition: all linear 0.4s;
 }
-.nav_menu .nav_menu_item li a:hover::after {
+nav ul li:hover::after {
   width: 100%;
 }
-.nav_icon {
-  width: 20%;
-  display: flex;
-  justify-content: end;
-  column-gap: 8px;
-  cursor: pointer;
+nav .nav-logo img {
+  width: 131px;
 }
-/* */
-.nav_icon .nav_icon_svg {
-  width: 23px;
-  height: 23px;
-  border: 1px solid #036e8a;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+nav .nav-logo {
+  justify-self: center;
 }
-.nav_icon_svg i {
-  font-size: 8px;
-  color: #036e8a;
+nav .nav-btn {
+  justify-self: end;
 }
-
-/* ==========navber css ends here========= */
-* ====bnner css starts ====== */
+nav .nav-btn a {
+  color: #fff;
+  font-family: var(--inter);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  padding: 16px 40px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  transition: all linear 0.4s;
+}
+nav .nav-btn a:hover {
+  border: 1px solid rgb(255, 255, 255, 0.4);
+}
+/* ====navber css ends ====== */
+/* ====bnner css starts ====== */
 #bnner {
   background: #394792;
   padding-top: 210px;
@@ -231,7 +232,70 @@ h1 .Arrow_1 {
 }
 /* ====management css ends ====== */
 
-
+/* ====others css starts ====== */
+#others {
+  padding-top: 100px;
+  margin-bottom: 90px;
+}
+#others .sidebyside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 117px;
+}
+#others .left img {
+  width: 590px;
+}
+#others .right h2 {
+  color: #232323;
+  font-family: var(--Space);
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 24px;
+  max-width: 500px;
+  position: relative;
+}
+#others .right h2 img {
+  width: 222px;
+  position: absolute;
+  top: 43px;
+  right: 0;
+}
+#others .right > p {
+  color: rgb(35, 35, 35, 0.8);
+  font-family: var(--inter);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 170%;
+  max-width: 500px;
+  margin-bottom: 32px;
+}
+.others-item {
+  display: grid;
+  row-gap: 24px;
+}
+.others-item .others-box {
+  display: grid;
+  grid-template-columns: 44px 100%;
+  align-items: center;
+  column-gap: 16px;
+  grid-template-columns: repeat(2, fr);
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(35, 35, 35, 0.16);
+  background: #fff;
+}
+.others-box img {
+  width: 44px;
+}
+.others-box h4 {
+  color: #000;
+  font-family: var(--inter);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 170%;
+}
+/* ====others css ends ====== */
 /* ====users css starts ====== */
 #users {
   background: #f9faff;
@@ -365,7 +429,6 @@ h1 .Arrow_1 {
 
 /* ====users css ends ====== */
 
-
 /* ====empoly css starts ====== */
 #employ {
   margin: 100px 0;
@@ -414,4 +477,3 @@ h1 .Arrow_1 {
 }
 
 /* ====empoly css ends ====== */
-
