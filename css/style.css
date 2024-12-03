@@ -84,3 +84,234 @@ a {
 }
 
 /* ==========navber css ends here========= */
+
+/* ====management css starts ====== */
+#management {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#management h2 {
+  color: #232323;
+  text-align: center;
+  font-family: var(--Space);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 140%;
+  text-align: center;
+  margin-bottom: 64px;
+  position: relative;
+}
+#management h2 .shaep_2 {
+  position: absolute;
+  right: 269px;
+  top: 45px;
+}
+.sidebyside {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 32px;
+}
+.management_box h3 {
+  color: #232323;
+  font-family: var(--Space);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+  max-width: 410px;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+.management_box p {
+  color: #757575;
+  font-family: var(--inter);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 170%;
+  max-width: 410px;
+}
+/* ====management css ends ====== */
+
+
+/* ====users css starts ====== */
+#users {
+  background: #f9faff;
+  padding-top: 100px;
+  padding-bottom: 178px;
+}
+.users_header {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.users_head_content h2 {
+  color: #232323;
+  font-family: var(--Space);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 32px;
+  position: relative;
+}
+.users_head_content h2 img {
+  position: absolute;
+  top: 45px;
+  right: 275px;
+}
+.users_head_content p {
+  color: #232323;
+  font-family: var(--inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  max-width: 558px;
+}
+
+.users_head_arow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  align-content: end;
+  justify-self: end;
+}
+.users_head_arow i {
+  font-size: 24px;
+  color: #757575;
+  padding: 24px;
+  border-radius: 49px;
+  background-color: rgb(50, 91, 151, 0.1);
+  transition: all linear.4s;
+}
+.users_head_arow i:hover {
+  color: #fff;
+  background-color: #325b97;
+}
+.users_content {
+  display: grid;
+  grid-template-columns: repeat(2, 592px);
+  column-gap: 24px;
+}
+.users_box {
+  border-radius: 32px;
+  background: #fff;
+  padding: 48px;
+  margin-top: 64px;
+}
+.users_box h3 {
+  color: #000;
+  font-family: var(--inter);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  display: grid;
+  grid-template-columns: repeat(2, 44%);
+  margin-bottom: 24px;
+}
+.users_box:first-child h3 {
+  width: 85%;
+}
+.users_box h3 .head_svg {
+  font-size: 18px;
+  color: #ffc236;
+  justify-self: start;
+  align-content: center;
+}
+.users_box p {
+  color: #757575;
+  font-family: var(--inter);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170%;
+  max-width: 570px;
+  position: relative;
+  margin-bottom: 48px;
+}
+.users_box p::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(35, 35, 35, 0.16);
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+}
+.users_box_name {
+  display: grid;
+  grid-template-columns: 17% 80%;
+  align-items: center;
+}
+.users_box_img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+.users_box_text h4 {
+  color: #232323;
+  font-family: var(--inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%;
+}
+.users_box_text h6 {
+  color: #757575;
+  font-family: var(--inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+/* ====users css ends ====== */
+
+
+/* ====empoly css starts ====== */
+#employ {
+  margin: 100px 0;
+}
+.empoly_box {
+  width: 1200px;
+  border-radius: 32px;
+  background: linear-gradient(112deg, #394792 -0.65%, #070f39 107.76%);
+}
+.empoly_content {
+  padding-top: 100px;
+  padding-left: 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.empoly_text h2 {
+  color: #fff;
+  font-family: var(--Space);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 140%;
+  max-width: 485px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.empoly_text h2 img {
+  position: absolute;
+  bottom: -70px;
+  right: 145px;
+}
+.empoly_text a {
+  color: #394792;
+  font-family: var(--inter);
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 18px 32px;
+  border-radius: 30px;
+  background: #fff;
+}
+.empoly_images {
+  width: 592px;
+  height: 320px;
+  border-radius: 30px 0px 30px 0px;
+  background: #d9d9d9;
+}
+
+/* ====empoly css ends ====== */
+
